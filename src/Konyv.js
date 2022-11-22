@@ -1,16 +1,18 @@
 import './Konyv.css';
 
-function Konyv() {
+
+
+function Konyv(props) {
     return (
       <div className="Konyv">
         <div className="Cim">
-          <h4>Könyv címe</h4>
+          <h4>{props.BookObject.title}</h4>
         </div>
         <div className="Szerzo">
-          <p>Szerző</p>
+          <p>{props.BookObject.author}</p>
         </div>
         <div className="Ar">
-          <p>112233$</p>
+          <p>{props.BookObject.price}Ft</p>
         </div>
       </div>
     );
